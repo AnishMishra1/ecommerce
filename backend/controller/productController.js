@@ -1,3 +1,3 @@
 exports.getAllProduct = (req,res) => {
-    res.status(200).json({message:"routes is working finers"})
+    res.status(200).json({message:"routes is working fines"})
 }

@@ -1,13 +1,13 @@
 const app = require("./App")
 
 const dotenv = require("dotenv");
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5674;
 
 
 
 //config
 
-dotenv.config({path:"backend/config/config.env"})
+require('dotenv').config();
 
 
 app.listen(PORT, () =>{
