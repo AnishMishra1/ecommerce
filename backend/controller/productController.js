@@ -1,6 +1,6 @@
 const Product = require("../models/productModels")
 
-//create product
+//create product and make logic
 exports.createProduct = async (req,res,next) => {
     const product = await Product.create(req.body);
 

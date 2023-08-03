@@ -1,3 +1,5 @@
+
+//Making product model
 const mongoose = require("mongoose");
 
 
