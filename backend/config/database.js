@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_URL = process.env.MONGODB_URL|| "mongodb://0.0.0.0:27017/ecommerce";
 
 
 const connectDatabase = () => {
     mongoose
-    .connect(MONGODB_URI,{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology:true})
-    .then(() => console.log("connect to DB"))
+    .connect(MONGODB_URL)
+    .then((conn) => console.log(`connected to DB :${conn.connection.host}`))
     .catch((err) => console.log(err.message))
 };
 
