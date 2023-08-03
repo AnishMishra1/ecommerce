@@ -1,3 +1,5 @@
+//Making file for Database
+
 const mongoose = require("mongoose")
 const MONGODB_URL = process.env.MONGODB_URL|| "mongodb://0.0.0.0:27017/ecommerce";
 
