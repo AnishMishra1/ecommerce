@@ -10,10 +10,10 @@ const router = express.Router();
 router.get('/products',getAllProduct);
 
 
-//Create route for new product----
+//Create route for new product-------
 router.route("/product/new").post(createProduct)
 
-//Update the Exist product-----
+//Update the Exist product---------
 router.route("/product/:id").put(updateProduct).delete(deleteProduct)
 
 

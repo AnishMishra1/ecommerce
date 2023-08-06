@@ -22,7 +22,7 @@ exports.getAllProduct = async(req,res) => {
     })
 }
 
-//Update the Product => UPDATE
+//Update the Product //=> UPDATE
 
 exports.updateProduct = async (req,res, next) => {
     let product = await Product.findById(req.params.id);
@@ -50,7 +50,7 @@ exports.updateProduct = async (req,res, next) => {
 
 }
 
-//DELETE----product
+//DELETE----product--------
 
 exports.deleteProduct = async(req,res,next) => {
     const product =  await Product.findById(req.params.id);
