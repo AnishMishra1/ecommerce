@@ -1,6 +1,8 @@
 const Product = require("../models/productModels")
 
-//create product and make logic
+//-----------CRUD OPERATION-------------------------//
+
+//create product and make logic----Admin =>CREATE
 exports.createProduct = async (req,res,next) => {
     const product = await Product.create(req.body);
 
@@ -10,7 +12,61 @@ exports.createProduct = async (req,res,next) => {
     })
 }
 
+//Get all product =>READ
+exports.getAllProduct = async(req,res) => {
 
-exports.getAllProduct = (req,res) => {
-    res.status(200).json({message:"routes is working fines"})
+    const products = await Product.find();
+    res.status(200).json({
+        success:true,
+        products
+    })
+}
+
+//Update the Product => UPDATE
+
+exports.updateProduct = async (req,res, next) => {
+    let product = await Product.findById(req.params.id);
+
+    if(!product){
+        return res.status(500).json({
+            success:false,
+            message:"product Not in list"
+
+        })
+    }
+
+    product = await Product.findByIdAndUpdate(req.params.id,req.body,{
+        new:true,
+        runValidators:true,
+        useFindAndModify:false
+    })
+
+    res.status(200).json({
+        success:true,
+        product
+    })
+
+
+
+}
+
+//DELETE----product
+
+exports.deleteProduct = async(req,res,next) => {
+    const product =  await Product.findById(req.params.id);
+     
+    if(!product){
+        return res.status(500).json({
+            success:false,
+            message:"Product Not Found"
+        })
+    }
+
+    await product.deleteOne();
+
+    res.status(200).json({
+        success:true,
+        message:"Product is deleted succesfully"
+    })
+
 }

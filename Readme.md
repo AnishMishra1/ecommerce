@@ -12,3 +12,6 @@ iv. By installing the nodemon
 //Making connection to MongoDB and Using the GET and Post Api for testing.
 
 // Making interconnect with route file to controller and last App file.
+
+
+//All CRUD operation is updated using Controller and Route file
