@@ -22,6 +22,28 @@ exports.getAllProduct = async(req,res) => {
     })
 }
 
+
+// Get Product Detail
+
+exports.getProductDetails = async (req,res,next) => {
+
+    const product = await Product.findById(req.params.id);
+
+    if(!product){
+        return res.status(500).json({
+            message:"product not in list",
+            success:flase
+        })
+    }
+
+    res.status(200).json({
+        success:true,
+        message:"Product found is successfully",
+        product
+
+    })
+}
+
 //Update the Product //=> UPDATE
 
 exports.updateProduct = async (req,res, next) => {
