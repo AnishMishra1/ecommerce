@@ -15,3 +15,5 @@ iv. By installing the nodemon
 
 
 //All CRUD operation is updated using Controller and Route file.........
+
+//GET, PUT ,DELETE, POST Api is Tested
