@@ -15,3 +15,7 @@ iv. By installing the nodemon
 
 
 //All CRUD operation is updated using Controller and Route file.........
+
+//ADD => Get one product detail......
+
+//......................All CRUD OPERATION REGARDING FINISH......................//
