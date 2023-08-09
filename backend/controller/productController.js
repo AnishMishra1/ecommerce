@@ -1,4 +1,6 @@
-const Product = require("../models/productModels")
+const Product = require("../models/productModels");
+const ErrorHandler = require("../utils/errorHandler");
+
 
 //-----------CRUD OPERATION-------------------------//
 
@@ -30,10 +32,7 @@ exports.getProductDetails = async (req,res,next) => {
     const product = await Product.findById(req.params.id);
 
     if(!product){
-        return res.status(500).json({
-            message:"product not in list",
-            success:flase
-        })
+        return next(new ErrorHandler("product not found",404))
     }
 
     res.status(200).json({
