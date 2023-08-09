@@ -23,3 +23,8 @@ iv. By installing the nodemon
 =======
 //GET, PUT ,DELETE, POST Api is Tested
 >>>>>>> 61973db6b9b85c418c53aa54d2a29d89f991b4f3
+
+
+//......................ERROR HANDELING......................//
+=======
+Made middle ware folder and utlis for errorhandling.
