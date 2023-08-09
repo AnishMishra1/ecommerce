@@ -7,14 +7,14 @@ iii. making .env file for port connection and secureness
 iv. By installing the nodemon 
 
 
-//Make product models and controller and Route for creating the product list.
+=>Make product models and controller and Route for creating the product list.
 
-//Making connection to MongoDB and Using the GET and Post Api for testing.
+=>Making connection to MongoDB and Using the GET and Post Api for testing.
 
-// Making interconnect with route file to controller and last App file.
+=> Making interconnect with route file to controller and last App file.
 
 
-//All CRUD operation is updated using Controller and Route file.........
+=>All CRUD operation is updated using Controller and Route file.........
 
 <<<<<<< HEAD
 //ADD => Get one product detail......
@@ -27,4 +27,4 @@ iv. By installing the nodemon
 
 //......................ERROR HANDELING......................//
 =======
-Made middle ware folder and utlis for errorhandling.
+=>Made middle ware folder and utlis for errorhandling.....
