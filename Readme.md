@@ -30,12 +30,9 @@ iv. By installing the nodemon
 
 //......................ERROR HANDELING......................//
 =======
-=>Made middle ware folder and utlis for errorhandling.....
-=======
->>>>>>> 21e4e47a1a1444c11038686135811ab3db6321a5
-
-=> Make Handling error folder for Async except try catch block
-=>try to solve unhandle promise rejection, uncaughtException, CastError
+1Made middle ware folder and utlis for errorhandling. 
+2 Make Handling error folder for Async except try catch block.
+3 try to solve unhandle promise rejection, uncaughtException, CastError.  
 
 
 //......................FILTER, PAGINATION, SEARCH......................//
