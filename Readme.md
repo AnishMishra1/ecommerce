@@ -37,3 +37,14 @@ iv. By installing the nodemon
 => Make Handling error folder for Async except try catch block
 =>try to solve unhandle promise rejection, uncaughtException, CastError
 
+
+//......................FILTER, PAGINATION, SEARCH......................//
+=======
+
+1.Creating the folder ApiFeatures where:-
+i. I made search function in the constructor using function
+ii. create filter callback
+iii. made pagination
+iv. Product count.
+
+
