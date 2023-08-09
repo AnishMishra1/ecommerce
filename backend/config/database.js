@@ -8,7 +8,7 @@ const connectDatabase = () => {
     mongoose
     .connect(MONGODB_URL)
     .then((conn) => console.log(`connected to DB :${conn.connection.host}`))
-    .catch((err) => console.log(err.message))
+    // .catch((err) => console.log(err.message)) => it is handled in server.js
 };
 
 module.exports = connectDatabase;
