@@ -1,3 +1,6 @@
+//......................Ecommerce Wep App MERN BASED......................//
+===
+
 Using MERN Technology => Making Ecommerce Web Application , Using some Technology like Express, MongoDb, React, Node
 
 1.Creating the server By using:-
@@ -16,15 +19,17 @@ iv. By installing the nodemon
 
 =>All CRUD operation is updated using Controller and Route file.........
 
-<<<<<<< HEAD
 //ADD => Get one product detail......
 
 //......................All CRUD OPERATION REGARDING FINISH......................//
-=======
+===
 //GET, PUT ,DELETE, POST Api is Tested
+<<<<<<< HEAD
 >>>>>>> 61973db6b9b85c418c53aa54d2a29d89f991b4f3
 
 
 //......................ERROR HANDELING......................//
 =======
 =>Made middle ware folder and utlis for errorhandling.....
+=======
+>>>>>>> 21e4e47a1a1444c11038686135811ab3db6321a5
