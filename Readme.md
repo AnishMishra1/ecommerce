@@ -51,10 +51,16 @@ iv. Product count.
 
 Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 
-=>Made  userSchema file in model folder for format 
-=> Made userController in controller folder for logic.
-=>made UserRoutes file in routing folder for routing purpose
+=>Made  userSchema file in model folder for format.
 
-=>Succesfully register Api tested and we need to import bcyrpt for hashing code.
+=> Made userController in controller folder for logic.
+
+=>made UserRoutes file in routing folder for routing purpose.
+
+=>Succesfully register Api tested and we need to import bcyrpt for hashing password.
+
+=>Creating Hasting method for new user and update user.
+
+=> create JWT token method for login. 
 
 
