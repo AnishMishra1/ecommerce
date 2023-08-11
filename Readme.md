@@ -45,3 +45,12 @@ iii. made pagination
 iv. Product count.
 
 
+
+//......................BACKEND USER AND PASSWORD AUTHENTICATION ......................//
+=======
+
+Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
+
+=>Made  userSchema file for format
+
+
