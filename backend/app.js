@@ -16,9 +16,12 @@ app.use(express.json());
 //Routes Import
 
 const product = require("./routes/productRoute");
+const user = require("./routes/userRoutes");
+
 const connectDatabase = require('./config/database');
 
 app.use("/api/v1", product)
+app.use("/api/v1", user);
 
 //middleware  for error
 app.use(errorMiddleWare)
