@@ -64,3 +64,9 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => create JWT token method for login. 
 
 
+
+//....MADE API'S FOR LOGIN, REGISTER & LOGOUT ....//
+
+=>made RestApi's FOR LOGIN , REGISTER AND LOGOUT.
+
+=> Made clean code making jwtToken filein utlis for error handling and response

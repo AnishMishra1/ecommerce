@@ -1,11 +1,14 @@
 
 
-require('dotenv').config();
+require("dotenv").config();
+
 const PORT = process.env.PORT || 3005 ;
+
 const app = require("./app")
 
 
-const dotenv = require("dotenv");
+
+
 
 //Handling Uncaught Exception
 process.on("uncaughtException",(err) =>{
