@@ -66,6 +66,7 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 
 
 //....MADE API'S FOR LOGIN, REGISTER & LOGOUT ....//
+========
 
 =>made RestApi's FOR LOGIN , REGISTER AND LOGOUT.
 
