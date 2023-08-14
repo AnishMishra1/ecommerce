@@ -68,8 +68,10 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 //....MADE API'S FOR LOGIN, REGISTER & LOGOUT ....//
 ========
 
-=>made RestApi's FOR LOGIN , REGISTER AND LOGOUT.
+=> Made RestApi's FOR LOGIN , REGISTER AND LOGOUT.
 
 => Made clean code making jwtToken filein utlis for error handling and response
 
 => Use cookie parser for login the user and gave option got login time.
+
+=> All API"S working related to logout,login, Register.

@@ -1,5 +1,6 @@
 const express = require('express');
 const { getAllProduct , createProduct, updateProduct, deleteProduct, getProductDetails} = require('../controller/productController');
+const { isAuthenticatedUser } = require('../middleware/auth');
 
 const router = express.Router();
 
@@ -7,7 +8,7 @@ const router = express.Router();
 
 
 //Read the All product list----
-router.get('/products',getAllProduct);
+router.get('/products',isAuthenticatedUser,getAllProduct);
 
 
 //Create route for new product-------

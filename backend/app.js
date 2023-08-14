@@ -3,12 +3,14 @@ const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
 const errorMiddleWare = require("./middleware/error")
+const cookieParser = require('cookie-parser')
 
 
 //Coonect to Database
 connectDB();
 
 app.use(express.json());
+app.use(cookieParser());
 
 // app.use('/',(req,res) =>{
 //     res.status(200).json({data:'Ecommerce App'});
