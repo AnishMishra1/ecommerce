@@ -75,3 +75,18 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Use cookie parser for login the user and gave option got login time.
 
 => All API"S working related to logout,login, Register.
+
+
+
+//....MADE API'S FOR FORGOT PASSWORD.......//
+======
+
+=> Made Admin user update and update apirelated to Admin
+
+=> Used crypto to create reset password token.
+
+=> Made sendEmail function for Recovery the password if we forget.
+
+=> Used the nodemailer for sending the mail to user for password reset.
+
+=> Create authorization for admin for create ,update , delete the product.

@@ -2,7 +2,8 @@ require('dotenv').config();
 const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken") 
+const jwt = require("jsonwebtoken");
+const crypto = require("crypto"); 
 
 
 const userSchema = new mongoose.Schema({
@@ -62,8 +63,8 @@ userSchema.pre("save",async function(next){
 
 //JWT Token
 userSchema.methods.getJWTToken = function (){
-    return jwt.sign({id: this._id}, process.env.JWT_SECRET = "ddddddddss",{
-        expiresIn : process.env.JWT_EXPIRE =24,
+    return jwt.sign({id: this._id}, JWT_SECRET = "ddddddddss",{
+        expiresIn: '24h',
     });
 };
 
@@ -72,5 +73,27 @@ userSchema.methods.getJWTToken = function (){
 userSchema.methods.comparePassword = async function(enteredPassword){
     return await bcrypt.compare(enteredPassword,this.password);
 }
+
+
+//Genrating password Reset Token
+userSchema.methods.getResetPasswordToken = function () {
+    
+    //Generating Token
+
+    const resetToken = crypto.randomBytes(20).toString("hex");
+
+    //Hashing and adding resetPasswordToken to userSchema
+    this.resetPasswordToken = crypto
+    .createHash("sha256")
+    .update(resetToken)
+    .digest("hex");
+
+
+    this.resetPasswordExpire = Date.now() + 15 * 60 * 1000;
+
+    return resetToken;
+}
+
+
 
 module.exports = mongoose.model("User",userSchema);
