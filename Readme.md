@@ -90,3 +90,7 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Used the nodemailer for sending the mail to user for password reset.
 
 => Create authorization for admin for create ,update , delete the product.
+ 
+=> Create reset Api and also generate token regarding reset password.
+
+=> fixing the Error of duplicate key and jwt expire error etc.
