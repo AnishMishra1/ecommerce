@@ -1,10 +1,11 @@
 
+const { config } = require("dotenv");
 
-require("dotenv").config();
-
-const PORT = process.env.PORT || 3005 ;
+config();
 
 const app = require("./app")
+
+const PORT = process.env.PORT || 3005 ;
 
 
 
