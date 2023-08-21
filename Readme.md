@@ -94,3 +94,10 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Create reset Api and also generate token regarding reset password.
 
 => fixing the Error of duplicate key and jwt expire error etc.
+
+
+//...MADE API FOR USER FOR UPDATE, GET ETC..//
+======
+=> Made Api fr get user detail.
+
+=> Made Api for update password.
