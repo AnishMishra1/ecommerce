@@ -101,3 +101,9 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Made Api fr get user detail.
 
 => Made Api for update password.
+
+=> update user name and email using Api.
+
+=> Single user detail check by Admin
+
+=> All user check by Admin.
