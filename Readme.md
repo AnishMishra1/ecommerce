@@ -98,7 +98,7 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 
 //...MADE API FOR USER FOR UPDATE, GET ETC..//
 ======
-=> Made Api fr get user detail.
+=> Made Api for get user detail.
 
 => Made Api for update password.
 
@@ -106,7 +106,7 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 
 => Single user detail check by Admin
 
-=> All user check by Admin.
+=> All user check by Admin...
 
 => Delete user, Update user role Api formed.
 
