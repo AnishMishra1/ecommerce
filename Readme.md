@@ -107,3 +107,5 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Single user detail check by Admin
 
 => All user check by Admin.
+
+=>Delete user, Update user role Api formed.
