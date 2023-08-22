@@ -111,3 +111,6 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Delete user, Update user role Api formed.
 
 => Made Api for Reviews for product and Changes in existing reviews by old user.
+
+=> Made Api for all revies and delete product review.
+
