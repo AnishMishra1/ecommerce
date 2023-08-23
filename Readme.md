@@ -96,7 +96,7 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => fixing the Error of duplicate key and jwt expire error etc.
 
 
-//...MADE API FOR USER FOR UPDATE, GET ETC..//
+//...MADE API FOR USER AND ADMIN FOR UPDATE, GET ETC..//
 ======
 => Made Api for get user detail.
 
@@ -113,4 +113,9 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Made Api for Reviews for product and Changes in existing reviews by old user.
 
 => Made Api for all revies and delete product review.
+
+
+//..MAKING ORDER API'S....//
+=======
+=> Making Order model.
 
