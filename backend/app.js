@@ -20,11 +20,13 @@ app.use(cookieParser());
 
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoutes");
+const order = require("./routes/orderRoute")
 
 const connectDatabase = require('./config/database');
 
 app.use("/api/v1", product)
 app.use("/api/v1", user);
+app.use("/api/v1", order)
 
 //middleware  for error
 app.use(errorMiddleWare)
