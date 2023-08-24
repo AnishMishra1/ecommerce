@@ -120,3 +120,9 @@ Installing Cookie-parser , jsonwebtoken, bcyrptjs, nodemailer, validator.
 => Making Order model.
 
 => controller and route is formed for order create.
+
+=>Get single order and Get logged in user order.
+
+=> Get all order by admin and total price related to specfic product.
+
+=> For Admin -: Update order status, delete order.
