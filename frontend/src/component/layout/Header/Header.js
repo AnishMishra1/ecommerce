@@ -1,6 +1,8 @@
 import React from "react";
-import {ReactNavbar} from "overlay-navbar"
-import logo from "../../Images/logo.PNG"
+import { ReactNavbar} from "overlay-navbar"
+import logo from "../../../Images/logo.PNG"
+
+
 
 
 
@@ -10,8 +12,8 @@ function Header() {
     return <ReactNavbar
     burgerColorHover = "#eb4034"
     logo ={logo}
-    logoWidth= "20vmax"
-    navColor1 = "black"
+    logoWidth= "15vmax"
+    navColor1 = "white"
     logoHoverSize = "10px"
     logoHoverColor = "#eb4034"
     link1Text= "Home"
@@ -30,7 +32,16 @@ function Header() {
     nav4justifyContent= "flex-start"
     link1colorHover = "#eb4034"
     link1Margin = "1vmax"
+    profileIconColor = "rgba(35, 35 , 35 ,0.8)"
+    searchIconColor = "rgba(35, 35 , 35 , 0.8)"
+    cartIconColor = "rgba(35, 35, 35, 0.8)"
+    profileIconHover = "#eb4034"
+    cartIconColorHover = "#eb4034"
+    searchIconColorHover ="#eb4034"
+    cartIconMargin = "1vmax"
+  
     
+
      />
     
 }
