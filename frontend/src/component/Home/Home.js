@@ -7,7 +7,8 @@ const product = {
     name: "Blue",
     images: [{url: "http://i.ibb.co/DRST11n/1.webp"}],
     price:"3000",
-    _id:"anish"
+    _id:"anish",
+    
 }
 
 
@@ -28,8 +29,17 @@ const Home = () => {
 
         <h2 className='homeHeading'> Featured Product</h2>
 
-        <div className='container' id='container'></div>
+        <div className="container" id="container">
         <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        </div>
+        
 
     </Fragment>
 }
