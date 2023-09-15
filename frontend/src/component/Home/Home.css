@@ -61,6 +61,8 @@
  margin: 2vmax auto ;
  width: 80vw;
  flex-wrap: wrap;
+ justify-content: center;
+ 
 }
 
 .productCard {
