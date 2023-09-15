@@ -1,7 +1,13 @@
-import React , { Fragment} from 'react';
+import React , { Fragment , useEffect} from 'react';
 import {BsMouse2Fill} from 'react-icons/bs';
 import "./Home.css"
-import Product from "./Product.js"
+import Product from "./Product.js";
+import MetaData from "../layout/MetaData.js";
+import {getProduct} from "../../actions/productAction";
+import{ useDispatch} from "react-redux";
+
+
+
 
 const product = {
     name: "Blue",
@@ -13,7 +19,16 @@ const product = {
 
 
 const Home = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getProduct())
+    }, [dispatch]);
+
+    
     return <Fragment>
+
+        <MetaData title= "DANSEM"/>
 
         <div className = "banner">
             <p>Welcome to PurunMool Ecommerce</p>
