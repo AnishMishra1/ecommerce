@@ -17,12 +17,12 @@ export const getProduct = () => async (dispatch) => {
         dispatch({
             type: ALL_PRODUCT_SUCCESS,
             payload: data,
-        })
+        });
     } catch (error) {
         dispatch({
             type: ALL_PRODUCT_FAIL,
-            PAYLOAD: error.response.data.message,
-        })
+            payload: error.response.data.message,
+        });
         
     }
 
