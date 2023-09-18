@@ -15,20 +15,20 @@ export const productReducer =
         case ALL_PRODUCT_REQUEST:
             return {
                 loading: true,
-                product:[],
+                products: [],
             };
 
         case ALL_PRODUCT_SUCCESS:
              return {
-                loading:false,
-                product:actions.payload.products,
-                productsCount:actions.payload.productsCount
+                loading: false,
+                products: actions.payload.products,
+                productsCount: actions.payload.productsCount,
             };
 
          case ALL_PRODUCT_FAIL:
             return {
-               loading:false,
-               error:actions.payload
+                loading: false,
+                error: actions.payload,
             };
 
          case CLEAR_ERRORS:
