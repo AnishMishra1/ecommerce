@@ -20,7 +20,9 @@ exports.createProduct = catchAsyncErrors(async (req,res,next) => {
 });
 
 //Get all product =>READ
-exports.getAllProduct = catchAsyncErrors(async(req,res) => {
+exports.getAllProduct = catchAsyncErrors(async(req,res, next) => {
+
+    
 
     const resultPerPage = 5;
     const productCount = await Product.countDocuments();
@@ -54,7 +56,7 @@ exports.getProductDetails = catchAsyncErrors(async (req,res,next) => {
         success:true,
         message:"Product found is successfully",
         product,
-        productCount
+        
 
     })
 })
