@@ -9,6 +9,7 @@ import {
     PRODUCT_DETAILS_SUCCESS,
     PRODUCT_DETAILS_FAIL,
 } from "../constants/productConstant"; 
+import { useParams } from "react-router-dom";
 
 
 export const getProduct = () => async (dispatch) => {
@@ -32,7 +33,10 @@ export const getProduct = () => async (dispatch) => {
 };
 
 
+
+
 export const getProductDetails = (id) => async (dispatch) => {
+         
     try {
         dispatch({type: PRODUCT_DETAILS_REQUEST });
 
@@ -40,7 +44,7 @@ export const getProductDetails = (id) => async (dispatch) => {
 
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
-            payload: data.product,
+            payload: data.product
         });
     } catch (error) {
         dispatch({
