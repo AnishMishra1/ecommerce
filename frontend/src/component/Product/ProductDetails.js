@@ -27,7 +27,7 @@ const ProductDetails = () => {
         dispatch(getProductDetails(params.id))
      
 
-    }, [dispatch ,params.id]);
+    }, [dispatch, locator, params.id]);
 
     return (
         <Fragment>
